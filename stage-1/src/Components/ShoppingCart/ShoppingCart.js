@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import "./ShoppingCart.css";
 
 class ShoppingCart extends Component {
+  constructor(props) {
+    super(props)
+  }
+  
   render() {
     let shoppingCartDisplay = this.props.cart.map((element, index) => {
       return (
